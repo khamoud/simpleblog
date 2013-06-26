@@ -41,6 +41,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.3)
+    hirb (0.7.1)
     i18n (0.6.1)
     journey (1.0.4)
     jquery-rails (3.0.1)
@@ -52,6 +53,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.23)
     multi_json (1.7.7)
+    mysql2 (0.3.11)
     mysql2 (0.3.11-x86-mingw32)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -69,6 +71,8 @@ GEM
       activesupport (= 3.2.13)
       bundler (~> 1.0)
       railties (= 3.2.13)
+    rails-footnotes (3.7.9)
+      rails (>= 3.0.0)
     railties (3.2.13)
       actionpack (= 3.2.13)
       activesupport (= 3.2.13)
@@ -104,8 +108,10 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  hirb
   jquery-rails
   mysql2
   rails (= 3.2.13)
+  rails-footnotes
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
