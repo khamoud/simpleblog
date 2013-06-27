@@ -5,4 +5,10 @@
 	<p><%=user.first_name%></p>
 	<p><%=user.last_name%></p>
 	<p><%=user.email_address%></p>
+	<form action="/users/<%= user.id %>" method="post">
+		<input type="hidden" name="_method" value="delete">
+		<input type="submit" value="Delete">
+	</form>
+	<a href="/users/<%= user.id %>/edit">Edit</a>
 <%end%>
+<a href="/users/new">New User</a>

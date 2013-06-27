@@ -1,0 +1,9 @@
+<form action="/users/<%= @user.id %>" method="post">
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <input type="hidden" name="_method" value="put">
+  <input type="text" name="user[first_name]" placeholder="First Name" />
+  <input type="text" name="user[last_name]" placeholder="Last Name" />
+  <input type="text" name="user[email_address]" placeholder="Email Address" />
+  <input type="password" name="user[password]" placeholder="Password" />
+  <input type="submit" value="Update" />
+</form>
